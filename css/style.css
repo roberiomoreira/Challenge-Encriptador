@@ -40,7 +40,7 @@ main{
 .notice::before{
     position: absolute;
     content: '';
-    background-image: url('./images/aviso.svg');
+    background-image: url('/images/aviso.svg');
     width: 16px;
     height: 16px;
     top: 1px;
@@ -54,7 +54,7 @@ main{
 
 .text-encrypt{
     background: #FFFFFF;
-    background-image: url('./images/box-design.svg');
+    /*background-image: url('/images/box-design.svg');*/
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
