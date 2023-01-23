@@ -21,7 +21,30 @@ main{
 .text-no-encrypt{
     border: none;
     color: #0A3871;
-    margin-top: 90px;    
+    margin-top: 90px;
+    resize: none;    
+}
+
+.notice{
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    width: 230px;
+    color: #495057;
+    margin-left: 36px;
+    margin-bottom: 4px;
+}
+
+.notice::before{
+    position: absolute;
+    content: '';
+    background-image: url('./images/aviso.svg');
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: -24px;
 }
 
 ::placeholder{color: #0A3871;}
@@ -31,7 +54,7 @@ main{
 
 .text-encrypt{
     background: #FFFFFF;
-    background-image: url('/images/box-design.svg');
+    background-image: url('./images/box-design.svg');
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -40,24 +63,11 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    resize: none;
 }
 
 .text-encrypt:focus{
     outline: none;
-}
-
-.notice-information{
-    display: flex;
-}
-
-.notice{
-    padding: 8px;
-}
-
-.information{
-    color: #495057;
-    font-size: 12px;
-    opacity: 0.8;    
 }
 
 .buttons{
@@ -89,14 +99,14 @@ main{
     width: 280px;
 }
 
-.copy{
+.btn-copy{
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;    
-    margin-left: 108px;
+    margin-left: 120px;
     margin-top: 402px;
     position: absolute;
-    width: 280px;
+    width: 336px;
 }
